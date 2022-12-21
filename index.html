@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+	<title>Frontend Mentor | News homepage</title>
+
+
+	<!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+	<!--JavaScript-->
+	<script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu-opener").addEventListener("click", function(){
+                if(document.querySelector(".mobile-hidden-menu").style.display == 'block') {
+                    document.querySelector(".mobile-hidden-menu").style.display = 'none';
+                } else {
+                    document.querySelector(".mobile-hidden-menu").style.display = 'block';
+                }
+            })
+			document.querySelector(".menu-closer").addEventListener("click", function(){
+                if(document.querySelector(".mobile-hidden-menu").style.display == 'none') {
+                    document.querySelector(".mobile-hidden-menu").style.display = 'block';
+                } else {
+                    document.querySelector(".mobile-hidden-menu").style.display = 'none';
+                }
+            })
+        }
+    </script>
+	
+</head>
+<body>
+	<div id="grid-container">
+
+		<header>
+			<div class="container">
+				<div class="logo">
+					<img src="assets/images/logo.svg" alt="website logo"/>
+				</div>
+				<!--Menu-->
+				<div class="menu">
+					<nav>
+						<!--mobile menu opener-->
+						<div class="menu-opener">
+							<img src="assets/images/icon-menu.svg"/>
+						</div>
+						<div class="mobile-hidden-menu">
+							<div class="menu-closer">
+								<img src="assets/images/icon-menu-close.svg"/>
+							</div>
+							<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="">New</a></li>
+								<li><a href="">Popular</a></li>
+								<li><a href="">Trending</a></li>
+								<li><a href="">Categories</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="main-container">
+				<div class="main-photo"></div>
+				<article class="article">
+					<div class="article-title">
+						<h1>The Bright Future of Web 3.0?</h1>
+					</div>
+					<div class="article-text-and-button">
+						<div class="article-text">
+							<p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+						</div>
+						<a href="" class="button">Read more</a>
+					</div>
+				</article>
+			</div>	
+		</main>
+		<aside>
+			<div class="aside-container">
+				<h2>New</h2>
+				<div class="side-bar-article">
+					<a href=""><h4>Hydrogen VS Electric Cars</h4></a>
+					<p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+				</div>
+				<hr/>
+				<div class="side-bar-article">
+					<a href=""><h4>The Downsides of AI Artistry</h4></a>
+					<p>What are the possible adverse effects of on-demand AI image generation?</p>
+				</div>
+				<hr/>
+				<div class="side-bar-article">
+					<a href=""><h4>Is VC Funding Drying Up?</h4></a>
+					<p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+				</div>
+			</div>
+		</aside>
+		<section class="other-articles-container">
+			<div class="other-articles">
+				<div class="other-articles-image"></div>
+				<div class="other-articles-text">
+					<div class="other-articles-number">01</div>
+					<h4>Reviving Retro PCs</h4>
+					<p>What happens when old PCs are given modern upgrades?</p>
+				</div>
+			</div>
+			<div class="other-articles">
+				<div class="other-articles-image"></div>
+				<div class="other-articles-text">
+					<div class="other-articles-number">02</div>
+					<h4>Top 10 Laptops of 2022</h4>
+					<p>Our best picks for various needs and budgets.</p>
+				</div>
+			</div>
+			<div class="other-articles">
+				<div class="other-articles-image"></div>
+				<div class="other-articles-text">
+					<div class="other-articles-number">03</div>
+					<h4>The Grouth of Gaming</h4>
+					<p>How the pandemic has sparked fresh opportunies.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

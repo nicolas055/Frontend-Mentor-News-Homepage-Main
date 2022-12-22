@@ -161,7 +161,7 @@ hr {
 }
 
 /*Others Articles*/
-section.other-articles-container {
+footer {
 	grid-column: 1 / span 3;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -177,6 +177,7 @@ section.other-articles-container {
 	margin-right: 0;
 }
 .other-articles .other-articles-image {
+	display: block;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -207,6 +208,13 @@ section.other-articles-container {
 	margin: 0;
 	margin-bottom: 10px;
 	font-weight: 800;
+}
+.other-articles h4 a {
+	text-decoration: none;
+	color: #000;
+}
+.other-articles h4 a:hover {
+	color: rgb(206, 71, 47);
 }
 .other-articles p {
 	margin: 0;
@@ -275,7 +283,7 @@ section.other-articles-container {
 		color: var(--Very-dark-blue);
 		font-size: 17px;
 	}
-	section.other-articles-container {
+	footer {
 		grid-gap: 5px
 	}
 	
@@ -364,7 +372,7 @@ section.other-articles-container {
 	aside {
 		grid-column: 1 / span 3;
 	}
-	section.other-articles-container {
+	footer {
 		width: 100%;
 		grid-template-columns: 1fr 1fr;
 		justify-self: center;
@@ -463,7 +471,7 @@ section.other-articles-container {
 	aside {
 		grid-column: 1 / span 3;
 	}
-	section.other-articles-container {
+	footer {
 		grid-template-columns: 1fr;
 		justify-self: center;
 		
